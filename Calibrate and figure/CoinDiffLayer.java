@@ -16,7 +16,6 @@ import java.io.*;
 public class CoinDiffLayer {
     static double timeWindow;
     static Calibrator Cali;
-    static double maxEnergyThre;
     static int TotalLayer;
     static int pixelNumEachLayer = 64;
     static HashSet<String> legalOrder;
@@ -25,7 +24,6 @@ public class CoinDiffLayer {
         File toRead = new File(args[0]);
         timeWindow = Double.parseDouble(args[1]);
         Cali = new Calibrator(new File(args[2]), new File(args[3]));
-        maxEnergyThre = 1000;
         TotalLayer = 3;
 
 
@@ -71,7 +69,6 @@ public class CoinDiffLayer {
             double mid = es;
             es = ea; ea = mid;
         }
-        // if(es+ea>maxEnergyThre) return "";
         return String.format("%.1f,%.1f",es,ea);
     }
 
