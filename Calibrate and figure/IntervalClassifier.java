@@ -2,7 +2,9 @@
 * -This class reads the sorted merged file, and takes out time interval of two consecutive
 * events that happen in different layers
 * -Print the results to txt file for python to analyze and draw
-*
+* -This is the simplest version of record and count
+* -If an incident photon has a series of interaction in layers 0-1-1-2, then 0-1 and 1-2 would be recorded respectively
+* while 1-1 would not
 * */
 
 import java.util.*;
