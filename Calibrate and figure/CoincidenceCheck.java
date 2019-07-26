@@ -1,6 +1,7 @@
 /*
-* This program reads a finished csv file (timely-ordered)
+* -This program reads a finished csv file (timely-ordered)
 * and generate the coincident events with a given time window
+* -Withn the same time window, the events are gathererd together in a timely order
 * */
 
 import java.util.*;
